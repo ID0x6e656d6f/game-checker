@@ -1,0 +1,66 @@
+.container h2 {
+	font-size: 40px;
+	background: linear-gradient(312deg, rgba(208, 112, 221, 0.7777485994397759) 49%, rgba(168, 1, 241, 0.5284488795518207) 85%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.required {
+	color: red;
+}
+
+#login {
+	margin-top: 90px;
+	background: rgb(204, 24, 237);
+	background: linear-gradient(312deg, rgba(204, 24, 237, 0.7357317927170868) 49%, rgba(168, 1, 241, 0.8449754901960784) 85%);
+	box-shadow: rgba(168, 1, 241, 0.8449754901960784) 0px 22px 70px 20px;
+	width: 90%;
+	max-width: 800px;
+	border-radius: 10px;
+}
+
+#login label,
+#login p {
+	font-size: 1.2em;
+	padding-right: 15px;
+}
+
+input {
+	border: 1.5px solid #D903FF;
+	background-color: #2b2b2b;
+	color: white;
+	width: 90%;
+}
+
+.regLnk {
+	color: #9570DD;
+	text-align: center;
+}
+
+button {
+	padding: 10px 15px 10px 15px;
+	border-radius: 5px;
+	color: #dc00ff;
+	border: 2px solid #dc00ff;
+	background-color: #2b2b2b;
+	transition: 0.3s all ease;
+}
+
+button:hover {
+	transition: 0.3s all ease;
+	box-shadow: #dc00ff 0px 15px 25px, #dc00ff 0px 8px 8px;
+}
+
+/*contenitore della pagina*/
+
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	top: 4.8vh;
+	height: 100%;
+	width: 95%;
+	background-color: transparent;
+}

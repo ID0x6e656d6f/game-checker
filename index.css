@@ -1,0 +1,364 @@
+/*animazioni del titolo*/
+@keyframes title{
+    from{
+        margin-top: -80%;
+    }
+    to{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@keyframes pop{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    70%{
+    	opacity:0;
+    }
+    90%{
+    	opacity:10;
+    }
+    100%{
+        opacity: 100;
+
+    }
+}
+/*parte del title*/
+.page_part{ /* qui */
+    	font-size:  calc(16px + 6 * ((100vw - 320px) / 680));
+	box-shadow: rgba(174, 0, 255, 0.63) 0px 45px 40px -40px;
+    	border-radius:20px;
+    	width:106%;
+}
+.page_part .titlee{ /* qui */
+    white-space:pre-line;
+    background: rgb(146,0,158);
+background: linear-gradient(270deg, rgba(146,0,158,0.854516806722689) 0%, rgba(171,0,255,0.8293067226890756) 21%, rgba(115,2,166,0.8461134453781513) 64%);
+    background-color: transparent;
+    	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    animation:title 3s 1;
+    margin-bottom:0;
+}
+.page_part .sas{
+	animation: pop 4s 1;
+	background: rgb(177,2,191);
+background: linear-gradient(90deg, rgba(177,2,191,0.8629201680672269) 0%, rgba(171,0,255,0.8293067226890756) 21%, rgba(115,2,166,0.8461134453781513) 64%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/*parte novità sugli esports*/
+
+.eSportCont {
+	position: relative;		/*contenitore della parte delle notizie degli esports*/
+	/*border: 1px solid black;*/
+	width: 99%;
+	height: auto;
+	/*background: rgb(0, 19, 128);
+	background: linear-gradient(121deg, rgba(121, 0, 213, 0.104) 0%, rgba(22, 0, 55, 0.562) 61%, rgba(0, 19, 128, 0.596) 100%);*/
+	border-radius: 10px;
+}
+
+.eSportCont h2 {
+	position: realtive;
+	margin-top: 0px;
+	left: 0px;
+	color: #da78f3;
+	border-radius: 10px 10px 0 0;
+	padding: 5px;
+}
+
+.newEsp {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.newEsp div {
+	height: auto;
+	width: 30%;
+	max-width: 400px;	/*Ogni div nel contenitore delle news degli esprts*/
+	padding: 25px;
+	margin: 10px;
+	line-height: 180%;
+	border: 1.5px solid black;
+	background-size: 100% 100%;
+	border-radius: 10px;
+	box-shadow: 0 1px 4px rgba(91, 13, 207, 0.266), 0 0 40px rgba(102, 0, 255, 0.264) inset;
+	transition: 0.5s all ease;
+}
+
+.newEsp div p {
+	background-color: rgba(230, 230, 230, 0.905);
+	position: relative;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+@media only screen and (max-width: 629px) {
+	.newEsp div {
+		height: auto;
+		/*per gli elementi con le news sugli esport*/
+		width: auto;
+		/*quando raggiunge questa dimensione di schermo si sistemano così, in modo */
+	}
+	/*da non essere orribili e stretti */
+}
+
+.newEsp div:hover {
+	box-shadow: 0 1px 12px rgba(91, 13, 207, 2.966), 0 5px 50px rgba(102, 0, 255, 2.964) inset;
+	transition: 0.3s all ease;
+	/*animazione della ombra dietro, per effetto movimento nell'hover*/
+}
+
+.newEsp a {
+	color: black;
+}
+
+
+/*parte team associati*/
+
+.ftEsp h2 {
+	font-weight: bold;
+	font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+	background: linear-gradient(312deg, rgba(255, 0, 0, 1) 0%, rgba(255, 169, 0, 1) 14%, rgba(247, 255, 0, 1) 27%, rgba(7, 255, 0, 1) 41%, rgba(0, 255, 220, 1) 51%, rgba(0, 174, 255, 1) 68%, rgba(0, 7, 255, 1) 81%, rgba(255, 0, 251, 1) 94%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;   /*così il background diventa il colore del testo*/
+}
+
+.espTeam {
+	display: flex;
+	justify-content: center;		/*div degli esport. display flex, e wrap*/
+	flex-wrap: wrap;			/*semplicemente, niente di speciale*/
+}
+
+.espTeam a {
+	color: black;
+}
+
+.espTeam div {
+	font-weight: bold;
+	height: auto;
+	min-height: 200px;
+	width: 75%;
+	max-width: 400px;
+	padding: 25px;
+	margin: 10px;
+	line-height: 180%;
+	/*border: 1px solid black;*/
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+				
+				/*parte dei div dei team di esports*/
+
+.o100thiDiv {
+	background-image: url("../img/100th.jpg");
+	box-shadow: 0 0px 4px rgba(243, 4, 4, 0.884), 0 0 40px rgb(255, 0, 0) inset;
+}
+
+.o100thiDiv p {
+	background: rgb(62, 0, 0);
+	background: linear-gradient(114deg, rgba(62, 0, 0, 0.9178046218487395) 23%, rgba(255, 0, 0, 0.8757878151260504) 100%);
+	position: relative;
+	color: white;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.FazeDiv {
+	background-image: url("../img/fz.png");
+	box-shadow: 0 0px 4px rgba(243, 4, 4, 0.884), 0 0 40px rgba(255, 0, 0, 0.781) inset;
+}
+
+.FazeDiv p {
+	background: rgb(150, 0, 0);
+	background: linear-gradient(114deg, rgba(150, 0, 0, 0.9542191876750701) 23%, rgba(255, 0, 0, 0.8533788515406162) 100%);
+	position: relative;
+	color: white;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.opticDiv {
+	background-image: url("../img/og.jpg");
+	box-shadow: 0 0px 4px rgba(6, 224, 6, 0.533), 0 0 40px rgba(9, 255, 0, 0.562) inset;
+}
+
+.opticDiv p {
+	background: rgb(0, 189, 65);
+	background: linear-gradient(114deg, rgba(0, 189, 65, 0.9262079831932774) 23%, rgba(37, 255, 0, 0.654499299719888) 100%);
+	position: relative;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.c9Div {
+	background-image: url("../img/c9.jpg");
+	box-shadow: 0 1px 4px rgba(4, 227, 243, 0.993), 0 0 40px rgb(0, 153, 255) inset;
+}
+
+.c9Div p {
+	background: rgb(0, 137, 158);
+	background: linear-gradient(114deg, rgba(0, 137, 158, 0.7357317927170868) 23%, rgba(0, 239, 255, 0.8757878151260504) 100%);
+	position: relative;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.rogDiv {
+	background-image: url("../img/rg.jpg");
+	box-shadow: 0 1px 4px rgba(4, 155, 243, 0.993), 0 0 40px rgba(0, 140, 255, 0.911) inset;
+}
+
+.rogDiv p {
+	background: rgb(0, 137, 158);
+	background: linear-gradient(114deg, rgba(0, 137, 158, 0.7357317927170868) 23%, rgba(0, 239, 255, 0.8757878151260504) 100%);
+	position: relative;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.pitKnDiv {
+	background-image: url("../img/pk.png");
+	box-shadow: 0 1px 4px rgba(243, 219, 4, 0.925), 0 0 40px rgb(251, 255, 0) inset;
+}
+
+.pitKnDiv p {
+	background: rgb(255, 203, 74);
+	background: linear-gradient(114deg, rgba(255, 203, 74, 0.8085609243697479) 23%, rgba(247, 255, 0, 0.8421743697478992) 100%);
+	position: relative;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.spGaDiv {
+	background-image: url("../img/ssg.jpg");
+	box-shadow: 0 1px 4px rgb(243, 227, 4), 0 0 40px rgb(216, 194, 0) inset;
+}
+
+.spGaDiv p {
+	background: rgb(255, 238, 55);
+	background: linear-gradient(312deg, rgba(255, 238, 55, 0.8253676470588236) 36%, rgba(113, 113, 113, 0.8113620448179272) 73%);
+	position: relative;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.BDSDiv {
+	background-image: url("../img/bds.png");
+	box-shadow: 0 1px 4px rgb(243, 4, 243), 0 0 40px rgba(225, 0, 255, 0.747) inset;
+}
+
+.BDSDiv p {
+	background: rgb(242, 74, 255);
+	background: linear-gradient(198deg, rgba(242, 74, 255, 0.8253676470588236) 20%, rgba(0, 234, 255, 0.8113620448179272) 73%);
+	position: relative;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.quesDiv {
+	background-image: url("../img/qs.jpg");
+	box-shadow: 0 1px 4px rgb(255, 238, 0), 0 0 40px rgba(243, 199, 4, 0.993) inset;
+}
+
+.quesDiv p {
+	background: rgb(255, 203, 74);
+	background: linear-gradient(114deg, rgba(255, 203, 74, 0.8085609243697479) 64%, rgba(0, 234, 255, 0.8421743697478992) 100%);
+	position: relative;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.vitDiv {
+	background-image: url("../img/vt.jpg");
+	box-shadow: 0 1px 4px rgba(243, 239, 4, 0.836), 0 0 40px rgba(255, 238, 0, 0.918) inset;
+}
+
+.vitDiv p {
+	background: rgb(171, 133, 0);
+	background: linear-gradient(114deg, rgba(171, 133, 0, 0.8645833333333334) 23%, rgba(247, 255, 0, 0.654499299719888) 100%);
+	position: relative;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+@media only screen and (max-width: 1007px) {
+	.espTeam div {
+		height: auto;
+		min-height: 10vh;
+		width: 30%;			/*se è troppo stretto, le immagin si rimpiccioliscono*/
+		max-width: 400px;		/*in modo da averle non troppo grandi e 2 in una stessa linea*/
+		padding: 25px;
+		margin: 10px;
+	}
+}
+
+
+/*Div giocatori random*/
+
+.randPlayerContainer {
+	position: relative;
+	/*border: 1px solid black;*/
+	width: 99%;
+	height: auto;
+	border-radius: 10px;
+	color: white;
+}
+
+.plyDiv h1 {
+	font-size: calc(20px + 6 * ((100vw - 320px) / 680));
+	background: rgb(243, 255, 0);
+	background: linear-gradient(101deg, rgba(243, 255, 0, 1) 45%, rgba(255, 224, 0, 1) 46%, rgba(207, 0, 255, 1) 52%, rgba(207, 0, 255, 1) 52%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.plyDiv pre {
+	font-size: calc(8px + 6 * ((100vw - 320px) / 680));	/*il testo si ridimensiona secondo questo calcolo in modo*/
+	padding: 10px;						/*da non essere troppo grande*/	
+	white-space: pre-wrap;					/*e inoltre il testo entra automaticamente dentro il div padre*/
+	white-space: -moz-pre-wrap;				/*grazie a white space e word wrap e la size*/
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+
+.plyDiv {
+	border-radius: 10px;
+	background: rgb(143, 0, 255);
+	background: linear-gradient(312deg, rgba(143, 0, 255, 0.9094012605042017) 19%, rgba(11, 11, 11, 0.9262079831932774) 72%);
+	padding: 10px 0 10px 0;
+	border: 2px solid black;
+	max-width: 1800px;
+}
+
+
+/*footer*/
+
+.foot {
+	width: 105%;
+	height: auto;
+	/*altezza automatica, larghezza 100% del container padre*/
+	padding: 15px 0px 15px 0px;
+	/*padding solo verticale*/
+	box-shadow: rgba(95, 4, 231, 3.933) 0px 30px 90px -12px inset;
+	background-color: rgba(154, 87, 255, 0.097);
+	border-radius: 15px 15px 0 0;
+}
+
+.foot a {
+	text-decoration: none;
+	color: #BC94FF;
+}

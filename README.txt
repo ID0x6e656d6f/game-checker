@@ -1,0 +1,3 @@
+This is an open source project.
+Is a simply website where you can login, create your account, edit your stats,...
+It's for a school project and the sha-256 algorithm is free for use too.

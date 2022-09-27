@@ -1,0 +1,22 @@
+/*contenitore della pagina*/
+
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	top: 4.8vh;
+	height: 100vh;
+	width: 95%;
+	background-color: transparent;
+}
+body {
+	min-height: 85vh;
+	color:white;
+}
+p img{
+	width: 80%;
+  	max-width: 400px;
+  	height: auto;
+  }

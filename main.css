@@ -1,0 +1,94 @@
+/*general purpose*/
+
+body {
+	background-image: url("https://wallpaperaccess.com/full/1246544.jpg");
+	background-size: 100% 120%;
+	/*bg pagina dietro, body*/
+	background-repeat: no-repeat;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+a{
+	text-decoration:none;
+}
+
+ ::-webkit-scrollbar {
+	width: 14px;
+}
+
+ ::-webkit-scrollbar-track {
+	background: #000000;
+}
+
+ ::-webkit-scrollbar-thumb {
+	background: #b256fd;
+	border-radius: 15px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+	background: #a02bff;
+}
+
+
+/*nav bar e oggetti interni*/
+
+.nav-bar {
+	position: fixed;
+	background-image: linear-gradient(315deg, #000000 60%, #b256fd 0%);
+	height: 4.5vh;
+	width: 100%;
+	min-height:30px;
+	/*la nav bar è un linear gradient messo al contrario*/
+	top: 0px;
+	/*in modo da dare l'effetto spezzettato tra viola e nero*/
+	left: 0px;
+	/*in più ha un'ombra sotto, a simulare l'effetto che è sopra gli altri elementi*/
+	box-shadow: 0 4px 8px 0 rgba(174, 0, 255, 0.63), 0 6px 20px 0 rgba(140, 0, 255, 0.904);
+	border-radius: 0px 0px 3px 3px;
+	z-index: 2;
+}
+
+.nav-bar a {
+	color: #b256fd;
+	/*colore del testo del profilo, accedi o il nome utente*/
+}
+
+@media (orientation: landscape) {
+	.nav-bar{
+		min-height:50px;
+	}
+}
+
+.actions_buttons a {
+	position: relative;
+	top: -5vh;
+	float: right;
+	right: 20px;
+	text-decoration: none;
+	font-size:3.5vh;
+}
+
+.prf:before {
+	background: linear-gradient(267deg, rgba(116,0,238,1) 0%, rgba(0,196,212,1) 100%);
+    	background-size: 200% 200%;
+    	-webkit-background-clip: text;
+    	-webkit-text-fill-color: transparent;
+	font-size:2.5vh;
+	content: 'your profile > ';
+}
+/*contenitore della pagina*/
+
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	top: 4.5vh;
+	height: 100%;
+	width: 95%;
+	background-color: transparent;
+}
