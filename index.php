@@ -4,7 +4,7 @@
 	session_start();
 	$_SESSION["logged"];
     require_once('connection/connection.php');
-    $db_selected = 'alezag74_gamechecker';
+    $db_selected = '###';
     mysqli_select_db($connection, $db_selected);
     $search = ("SELECT * FROM utenti");
     $result_ut = $connection->query($search);
